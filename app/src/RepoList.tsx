@@ -37,7 +37,7 @@ const RepoList: React.FC<PropType> = ({ setRepoName }): JSX.Element => {
     <div>
       <h2>List of repository</h2>
       <div className="list" nonce="">
-        <table className="repoList">
+        <table className="repoList width-50">
           <thead>
             <th>Name</th>
             <th>Owner</th>

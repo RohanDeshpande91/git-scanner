@@ -41,7 +41,7 @@ const RepoSummary: React.FC<PropType> = ({ repoName }): JSX.Element => {
   return (
     <div>
       <h2>{data?.repoDetails.name}</h2>
-      <table className="repoList">
+      <table className="repoList width-100">
         <tr>
           <td>Size : </td>
           <td>{data?.repoDetails.size ? (data?.repoDetails.size / (1024*1024)).toFixed(2): 0} MB</td>
@@ -68,7 +68,7 @@ const RepoSummary: React.FC<PropType> = ({ repoName }): JSX.Element => {
           <td>Content of 1 yml file : </td>{" "}
           <td>
             <pre>
-              <div
+              <div className="ymldiv"
                 dangerouslySetInnerHTML={{
                   __html: data?.repoDetails.ymlContent || "",
                 }}
